@@ -1,0 +1,2 @@
+class Organisation < User
+end

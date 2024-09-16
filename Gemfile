@@ -7,6 +7,9 @@ gem "rails", "~> 7.1.4"
 
 # Use mysql as the database for Active Record
 gem "mysql2", "~> 0.5"
+gem 'devise'
+gem 'rack-cors'
+
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
