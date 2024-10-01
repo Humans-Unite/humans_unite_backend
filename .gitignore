@@ -34,3 +34,5 @@
 
 # Config file
 /config/database.yml
+
+/config/credentials/production.key
