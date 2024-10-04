@@ -80,8 +80,6 @@ GEM
     base64 (0.2.0)
     bcrypt (3.1.20)
     bigdecimal (3.1.8)
-    bootsnap (1.18.4)
-      msgpack (~> 1.2)
     builder (3.3.0)
     capistrano (3.19.1)
       airbrussh (>= 1.0.0)
@@ -120,7 +118,7 @@ GEM
     i18n (1.14.6)
       concurrent-ruby (~> 1.0)
     io-console (0.7.2)
-    irb (1.14.0)
+    irb (1.14.1)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     loofah (2.22.0)
@@ -135,7 +133,6 @@ GEM
     method_source (1.1.0)
     mini_mime (1.1.5)
     minitest (5.25.1)
-    msgpack (1.7.2)
     mutex_m (0.2.0)
     mysql2 (0.5.6)
     net-imap (0.4.16)
@@ -151,7 +148,7 @@ GEM
       net-ssh (>= 5.0.0, < 8.0.0)
     net-smtp (0.5.0)
       net-protocol
-    net-ssh (7.2.3)
+    net-ssh (7.3.0)
     nio4r (2.7.3)
     nokogiri (1.16.7-aarch64-linux)
       racc (~> 1.4)
@@ -172,7 +169,7 @@ GEM
       method_source (~> 1.0)
     psych (5.1.2)
       stringio
-    puma (6.4.2)
+    puma (6.4.3)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.1.7)
@@ -235,7 +232,7 @@ GEM
       concurrent-ruby (~> 1.0)
     warden (1.2.9)
       rack (>= 2.0.9)
-    webrick (1.8.1)
+    webrick (1.8.2)
     websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -250,7 +247,6 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  bootsnap
   capistrano (~> 3.19)
   capistrano-bundler
   capistrano-rails
