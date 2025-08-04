@@ -1,2 +1,0 @@
-class Organisation < User
-end

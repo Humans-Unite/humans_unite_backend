@@ -1,6 +1,5 @@
 class RegistrationsController < Devise::RegistrationsController
   def create
-    binding.pry
     build_resource(sign_up_params)
     if resource.save
       sign_in(resource_name, resource)

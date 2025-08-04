@@ -1,11 +1,15 @@
 # config valid for current version and patch releases of Capistrano
 lock '~> 3.19.1'
-server '65.2.144.59', port: 22, roles: %i[web app db], primary: true
+server '65.0.130.253', port: 22, roles: %i[web app db], primary: true
 
-set :repo_url,        'git@github.com:Humans-Unite/humans_unite_backend.git'
+set :repo_url, 'git@github.com:Humans-Unite/humans_unite_backend.git'
+set :branch, 'main'
+# set :ssh_options, {
+#   keys: ['~/.ssh/id_ed25519_new']
+# }
 set :application,     'humans_unite_backend'
 
-set :rbenv_ruby,      '3.0.6'
+set :rbenv_ruby,      '3.2.1'
 set :default_env, { path: '~/.rbenv/shims:~/.rbenv/bin:$PATH' }
 
 # If using Digital Ocean's Ruby on Rails Marketplace framework, your username is 'rails'
@@ -25,11 +29,13 @@ set :puma_state,      "#{shared_path}/tmp/pids/puma.state"
 set :puma_pid,        "#{shared_path}/tmp/pids/puma.pid"
 set :puma_access_log, "#{release_path}/log/puma.access.log"
 set :puma_error_log,  "#{release_path}/log/puma.error.log"
-set :ssh_options,     { forward_agent: true, user: fetch(:user), keys: %w[~/.ssh/id_rsa.pub] }
+set :ssh_options,     { forward_agent: true, user: fetch(:user), keys: %w[~/.ssh/id_rsa_personal] }
 set :puma_preload_app, true
 set :puma_worker_timeout, nil
 set :puma_init_active_record, true
 set :puma_conf, "#{shared_path}/puma.rb"
+set :bundle_jobs, 2  # Change from 4 to 2 or even 1 for less CPU usage
+
 
 append :rbenv_map_bins, 'puma', 'pumactl'
 
@@ -76,8 +82,8 @@ namespace :deploy do
   desc 'Make sure local git is in sync with remote.'
   task :check_revision do
     on roles(:app) do
-      unless `git rev-parse HEAD` == `git rev-parse origin/master`
-        puts 'WARNING: HEAD is not the same as origin/master'
+      unless `git rev-parse HEAD` == `git rev-parse origin/main`
+        puts 'WARNING: HEAD is not the same as origin/main'
         puts 'Run `git push` to sync changes.'
         exit
       end
