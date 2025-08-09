@@ -1,23 +1,32 @@
-FROM ruby:3.2
+# Use official Ruby image
+FROM ruby:3.2.1
+
+# Install dependencies
+RUN apt-get update -qq && \
+    apt-get install -y curl gnupg default-mysql-client nodejs yarn build-essential libpq-dev
 
 # Set working directory
 WORKDIR /app
 
-# Install dependencies
-RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
+# Install bundler
+RUN gem install bundler
 
-# Copy Gemfile and install gems
+# Copy Gemfiles first (for caching)
 COPY Gemfile Gemfile.lock ./
-RUN gem install bundler && bundle install
+RUN bundle install --without development test
 
-# Copy the full app
+# Copy rest of the application
 COPY . .
 
-# Precompile assets (if needed)
-RUN bundle exec rake assets:precompile
+# Precompile assets
+# RUN RAILS_ENV=production bundle exec rake assets:precompile
 
-# Expose port
+# Set environment variables
+ENV RAILS_ENV=production
+ENV RACK_ENV=production
+
+# Expose port 3000
 EXPOSE 3000
 
-# Start the app using Puma
-CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]
+# Start the server
+CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0"]

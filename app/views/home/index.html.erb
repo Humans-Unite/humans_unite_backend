@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Humans Unite</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    /* Keep all your original CSS here */
+    /* (Paste your existing styles from .theme-background onward) */
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+    <!-- Left: Logo + Name -->
+    <div class="brand">
+      <img src="https://learnazureblobstorage.blob.core.windows.net/learnzurecontainer/logo.png" alt="Logo">
+      <a href="/">Humans Unite</a>
+    </div>
+
+    <!-- Center: Links -->
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="#">About</a>
+      <a href="/#">Opportunities</a>
+      <a href="/#">Organizations</a>
+      <a href="/#">Contact</a>
+    </div>
+
+    <!-- Right: Auth Buttons -->
+    <div class="auth-buttons">
+      <a href="/#"><span class="icon">🔓</span>LOGIN</a>
+      <a href="/#"><span class="icon">👤</span>REGISTER</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Homepage Content -->
+<div class="homepage-container">
+ <!-- Hero Section -->
+ <section class="hero theme-background text-white text-center py-16">
+   <div class="container mx-auto">
+     <h1 class="text-4xl font-bold">
+       Welcome to the Humans Unite Platform
+     </h1>
+     <p class="mt-4 text-lg">
+       Connecting volunteers with local organizations to make a difference
+       in the community.
+     </p>
+        <p class="mt-4 text-lg">
+       Our platform helps volunteers find meaningful opportunities and
+       allows organizations to post volunteer listings, fostering community
+       engagement and support.
+     </p>
+     <a
+      target="_blank"
+       href="https://learnazureblobstorage.blob.core.windows.net/learnzurecontainer/laddakh_trip.pdf"
+       class="mt-6 inline-block bg-white hover-bg-gray-300 theme-color px-6 py-3 rounded-full text-lg font-semibold"
+     >
+       Find Volunteer Opportunities
+     </a>
+     <a 
+      target="_blank"
+       href="/https://learnazureblobstorage.blob.core.windows.net/learnzurecontainer/laddakh_trip.pdf"
+       class="mt-6 ml-6 inline-block bg-white hover-bg-gray-300 theme-color px-6 py-3 rounded-full text-lg font-semibold"
+     >
+       Find Organization Opportunities
+     </a>
+   </div>
+
+ </section>
+
+
+
+ <!-- Opportunities Section -->
+ <section class="opportunities py-12">
+   <div class="container mx-auto">
+     <h2 class="text-center text-3xl font-semibold theme-color">
+       Featured Volunteer Opportunities
+     </h2>
+     <div class="grid grid-cols-1 md-grid-cols-3 gap-8 mt-8">
+       <div class="bg-white shadow-lg rounded-lg p-6">
+         <h3 class="text-xl font-semibold theme-color">
+           Community Cleanup
+         </h3>
+         <p class="mt-4">
+           Join us in keeping our community clean and green. No experience
+           required!
+         </p>
+         <a
+           href="/#"
+           class="inline-block mt-6 theme-background text-white px-4 py-2 rounded-full"
+         >
+           View Details
+         </a>
+       </div>
+
+       <div class="bg-white shadow-lg rounded-lg p-6">
+         <h3 class="text-xl font-semibold theme-color">Food Drive</h3>
+         <p class="mt-4">
+           Help collect and distribute food to those in need. Volunteers
+           needed urgently!
+         </p>
+         <a
+           href="/#"
+           class="inline-block mt-6 theme-background text-white px-4 py-2 rounded-full"
+         >
+           View Details
+         </a>
+       </div>
+
+       <div class="bg-white shadow-lg rounded-lg p-6">
+         <h3 class="text-xl font-semibold theme-color">
+           Animal Shelter Assistant
+         </h3>
+         <p class="mt-4">
+           Love animals? Spend your time helping shelter pets find loving
+           homes.
+         </p>
+         <a
+           href="/#"
+           class="inline-block mt-6 theme-background text-white px-4 py-2 rounded-full"
+         >
+           View Details
+         </a>
+       </div>
+     </div>
+
+     <div class="text-center mt-8">
+       <a
+         href="/"
+        class="inline-block bg-gray-100 theme-color px-6 py-3 rounded-full text-lg font-semibold"
+       >
+         See More Opportunities
+       </a>
+     </div>
+   </div>
+ </section>
+
+ <!-- Organization Section -->
+ <section class="organizations py-8 bg-gray-100">
+   <div class="container mx-auto text-center">
+     <h2 class="text-3xl font-semibold theme-color">
+       Our Partner Organizations
+     </h2>
+     <div class="grid grid-cols-1 md-grid-cols-3 gap-8 mt-8">
+       <div>
+         <img
+           src="/logos/org1.png"
+           alt="Organization 1"
+           class="mx-auto"
+         />
+       </div>
+       <div>
+         <img
+           src="/logos/org2.png"
+           alt="Organization 2"
+           class="mx-auto"
+         />
+       </div>
+       <div>
+         <img
+           src="/logos/org3.png"
+           alt="Organization 3"
+           class="mx-auto"
+         />
+       </div>
+     </div>
+   </div>
+ </section>
+
+ <!-- Call to Action Section -->
+ <section class="cta theme-background text-white text-center py-16">
+   <div class="container mx-auto">
+     <h2 class="text-3xl font-semibold">Get Involved Today!</h2>
+     <p class="mt-4 text-lg">
+       Whether you're looking to volunteer or post an opportunity, join our
+       community now.
+     </p>
+     <div class="mt-8">
+       <a
+         href="/register"
+         class="inline-block bg-white theme-color px-6 py-3 rounded-full text-lg font-semibold mr-4"
+       >
+         Register as Volunteer
+       </a>
+       <a
+         href="/register-organization"
+         class="inline-block bg-white theme-color px-6 py-3 rounded-full text-lg font-semibold"
+       >
+         Register Your Organization
+       </a>
+     </div>
+   </div>
+
+   <!-- Footer Content -->
+   <div class="secondary-theme-background text-white py-8 mt-16">
+     <div class="container mx-auto flex flex-col md-flex-row justify-between items-center">
+       <div class="text-center md-text-left">
+         <h3 class="text-xl font-semibold mb-2">Contact Us</h3>
+         <p class="mb-2">
+           Email:
+           <a href="mailto:support@humanshunite.com" class="text-blue-400">
+             support@humanshunite.com
+           </a>
+         </p>
+         <p>
+           Phone:
+           <a href="tel:+918578877405" class="text-blue-400">
+             +91 8578877405
+           </a>
+         </p>
+       </div>
+       <div class="mt-4 md-mt-0">
+         <h3 class="text-xl font-semibold mb-2">Follow Us</h3>
+         <div class="flex justify-center md-justify-start space-x-4">
+           <a
+             href="https://facebook.com"
+             class="text-blue-600 hover-text-blue-400"
+             target="_blank"
+             rel="noopener noreferrer"
+           >
+             <svg
+               xmlns="http://www.w3.org/2000/svg"
+               class="h-6 w-6"
+               fill="none"
+               viewBox="0 0 24 24"
+               stroke="currentColor"
+             >
+               <path
+                 stroke-linecap="round"
+                 stroke-linejoin="round"
+                 stroke-width="2"
+                 d="M13 16v-4h-3v-2.5a3 3 0 013-3h2v2h-2a1 1 0 00-1 1v1.5h3l-1 2.5z"
+               />
+             </svg>
+           </a>
+           <a
+             href="https://twitter.com"
+             class="text-blue-400 hover-text-blue-300"
+             target="_blank"
+             rel="noopener noreferrer"
+           >
+             <svg
+               xmlns="http://www.w3.org/2000/svg"
+               class="h-6 w-6"
+               fill="none"
+               viewBox="0 0 24 24"
+               stroke="currentColor"
+             >
+               <path
+                 stroke-linecap="round"
+                 stroke-linejoin="round"
+                 stroke-width="2"
+                 d="M22 2.5c-.8.4-1.7.7-2.6.8a4.7 4.7 0 002.1-2.6 9.5 9.5 0 01-3 1.1A4.7 4.7 0 0015.5 2a4.7 4.7 0 00-4.6 4.6c0 .4 0 .7.1 1a13.3 13.3 0 01-9.7-4.9c-.4.6-.6 1.3-.6 2.1 0 1.5.7 2.8 1.8 3.6-.6 0-1.2-.2-1.7-.6v.1c0 2 1.4 3.6 3.3 4a4.7 4.7 0 01-2.1.1c.6 1.9 2.4 3.3 4.5 3.3a9.4 9.4 0 01-5.8 2c-.4 0-.8 0-1.2-.1 2.1 1.4 4.5 2.3 7.2 2.3a13.3 13.3 0 0013.3-13.3v-.6c.9-.6 1.7-1.4 2.3-2.3z"
+               />
+             </svg>
+           </a>
+           <a
+             href="https://instagram.com"
+             class="text-pink-400 hover-text-pink-300"
+             target="_blank"
+             rel="noopener noreferrer"
+           >
+             <svg
+               xmlns="http://www.w3.org/2000/svg"
+               class="h-6 w-6"
+               fill="none"
+               viewBox="0 0 24 24"
+               stroke="currentColor"
+             >
+               <path
+                 stroke-linecap="round"
+                 stroke-linejoin="round"
+                 stroke-width="2"
+                 d="M12 2c3.6 0 6.7 3.1 6.7 6.7v8c0 3.6-3.1 6.7-6.7 6.7s-6.7-3.1-6.7-6.7v-8c0-3.6 3.1-6.7 6.7-6.7zm0 1.3c-2.9 0-5.3 2.4-5.3 5.3v8c0 2.9 2.4 5.3 5.3 5.3s5.3-2.4 5.3-5.3v-8c0-2.9-2.4-5.3-5.3-5.3zm6.2 4.2a1.3 1.3 0 11-2.7 0 1.3 1.3 0 012.7 0zm-6.2 4.3c-2.3 0-4.2 1.9-4.2 4.2 0 2.3 1.9 4.2 4.2 4.2 2.3 0 4.2-1.9 4.2-4.2 0-2.3-1.9-4.2-4.2-4.2z"
+               />
+             </svg>
+           </a>
+         </div>
+       </div>
+       <div class="text-center mt-8">
+         <p class="text-sm">
+           © 2025 Humans Unite. All rights reserved.
+         </p>
+       </div>
+     </div>
+   </div>
+ </section>
+</div>
+
+<!-- Keep your original CSS here -->
+<style>
+ .theme-background {
+   background-image: radial-gradient(circle, #357994 1px, transparent 15px);
+   background-size: 5px 5px;
+ }
+
+ .secondary-theme-background {
+   background-image: radial-gradient(circle, #153947 1px, transparent 15px);
+   background-size: 5px 5px;
+ }
+
+ .theme-color {
+   color: #357994;
+ }
+
+ .secondary-theme-color {
+   color: #153947;
+ }
+
+ .homepage-container * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ .homepage-container {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   line-height: 1.6;
+   color: #333;
+ }
+
+ /* Utility Classes */
+ .text-white { color: white; }
+ .text-center { text-align: center; }
+ .text-left { text-align: left; }
+ .text-4xl { font-size: 2.25rem; }
+ .text-3xl { font-size: 1.875rem; }
+ .text-xl { font-size: 1.25rem; }
+ .text-lg { font-size: 1.125rem; }
+ .text-sm { font-size: 0.875rem; }
+ .font-bold { font-weight: 700; }
+ .font-semibold { font-weight: 600; }
+ .mt-4 { margin-top: 1rem; }
+ .mt-6 { margin-top: 1.5rem; }
+ .mt-8 { margin-top: 2rem; }
+ .mt-16 { margin-top: 4rem; }
+ .mb-2 { margin-bottom: 0.5rem; }
+ .ml-6 { margin-left: 1.5rem; }
+ .mr-4 { margin-right: 1rem; }
+ .py-16 { padding-top: 4rem; padding-bottom: 4rem; }
+ .py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+ .py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+ .px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+ .px-4 { padding-left: 1rem; padding-right: 1rem; }
+ .py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+ .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+ .p-6 { padding: 1.5rem; }
+ .inline-block { display: inline-block; }
+ .bg-white { background-color: white; }
+ .bg-gray-100 { background-color: #f7fafc; }
+ .hover-bg-gray-300:hover { background-color: #e2e8f0; }
+ .rounded-full { border-radius: 9999px; }
+ .rounded-lg { border-radius: 0.5rem; }
+ .shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+ .space-x-4 > * + * { margin-left: 1rem; }
+ .h-6 { height: 1.5rem; }
+ .w-6 { width: 1.5rem; }
+ .mx-auto { margin-left: auto; margin-right: auto; }
+
+ .container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 1.25rem;
+ }
+
+ .grid {
+   display: grid;
+ }
+
+ .grid-cols-1 {
+   grid-template-columns: repeat(1, minmax(0, 1fr));
+ }
+
+ .gap-8 {
+   gap: 2rem;
+ }
+
+ .flex {
+   display: flex;
+ }
+
+ .flex-col {
+   flex-direction: column;
+ }
+
+ .justify-between {
+   justify-content: space-between;
+ }
+
+ .justify-center {
+   justify-content: center;
+ }
+
+ .items-center {
+   align-items: center;
+ }
+
+ .text-blue-400 {
+   color: #60a5fa;
+ }
+
+ .text-blue-600 {
+   color: #2563eb;
+ }
+
+ .text-pink-400 {
+   color: #f472b6;
+ }
+
+ .hover-text-blue-400:hover {
+   color: #60a5fa;
+ }
+
+ .hover-text-blue-300:hover {
+   color: #93c5fd;
+ }
+
+ .hover-text-pink-300:hover {
+   color: #f9a8d4;
+ }
+
+ /* Media Queries */
+ @media (min-width: 768px) {
+   .md-grid-cols-3 {
+     grid-template-columns: repeat(3, minmax(0, 1fr));
+   }
+   .md-flex-row {
+     flex-direction: row;
+   }
+   .md-text-left {
+     text-align: left;
+   }
+   .md-mt-0 {
+     margin-top: 0;
+   }
+   .md-justify-start {
+     justify-content: flex-start;
+   }
+ }
+
+ /* Custom Styling */
+ .homepage-container a {
+   text-decoration: none;
+   transition: all 0.3s ease;
+ }
+
+ .homepage-container a:hover {
+   transform: translateY(-1px);
+ }
+
+ .homepage-container .opportunity-card {
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ .homepage-container .opportunity-card:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+ }
+
+ .homepage-container svg {
+   stroke: currentColor;
+   fill: none;
+   stroke-width: 2;
+   stroke-linecap: round;
+   stroke-linejoin: round;
+ }
+     nav {
+      background-color: #357994; /* fallback color */
+       padding: 12px 20px;
+      margin-bottom:2px
+
+    }
+
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+    }
+
+    /* Logo & brand */
+    .brand {
+      display: flex;
+      align-items: center;
+      gap:10px
+      padding-left: 10px;
+    }
+    .brand img {
+      height: 32px;
+      width: 32px;
+      margin-right: 8px;
+    }
+    .brand a {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    /* Nav links */
+    .nav-links {
+      display: flex;
+      gap: 40px;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+    }
+    .nav-links a:hover {
+      color: #d1d1d1;
+    }
+
+    /* Auth buttons */
+    .auth-buttons {
+      display: flex;
+      gap: 10px;
+    }
+    .auth-buttons a {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background-color: #0b3c4b;
+      color: white;
+      padding: 6px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .auth-buttons a:hover {
+      background-color: #145f73;
+    }
+
+    /* Icon styles (using Unicode emoji or Font Awesome if available) */
+    .auth-buttons a .icon {
+      display: inline-block;
+    }
+</style>
+
+</body>
+</html>
