@@ -18,7 +18,7 @@ RUN bundle install --without development test
 # Copy rest of the application
 COPY . .
 
-# Precompile assets
+# Precompile assets (uncomment if needed)
 # RUN RAILS_ENV=production bundle exec rake assets:precompile
 
 # Set environment variables
@@ -28,5 +28,9 @@ ENV RACK_ENV=production
 # Expose port 3000
 EXPOSE 3000
 
-# Start the server
-CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0"]
+# Copy entrypoint script and give execute permissions
+COPY entrypoint.sh /usr/bin/entrypoint.sh
+RUN chmod +x /usr/bin/entrypoint.sh
+
+# Use the entrypoint script to run migrations and start server
+CMD ["/usr/bin/entrypoint.sh"]
