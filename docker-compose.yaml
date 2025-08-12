@@ -1,16 +1,16 @@
-
 services:
   app:
     build: .
-    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -b 0.0.0.0"
     ports:
       - "3000:3000"
     volumes:
       - .:/app
     environment:
       RAILS_ENV: development
+      DB_HOST: db
       DB_USERNAME: Mahfuz
       DB_PASSWORD: Mahfuz@123
+      DATABASE_NAME: humans_unite_backend_development
     depends_on:
       - db
 
